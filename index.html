@@ -27,6 +27,7 @@
   --good:#4cc283; --warn:#f08373; --warn-bg:#2b1a1a; --good-bg:#12291f; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 .nums-grid>*,.proc>*,.sop>*,.reg>*,.why>*,.flow>*,.road>*{min-width:0}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
 body{background:var(--bg);color:var(--fg);font:400 16px/1.6 var(--b);margin:0}
@@ -55,8 +56,8 @@ h2{font-size:clamp(28px,4.4vw,44px);font-weight:800;font-stretch:80%;letter-spac
 .pres{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);display:inline-block}
 .pres small{display:block;font:500 11px/1 var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--hero-mute);margin-bottom:6px}
 .pres b{font-weight:600}
-.logo-tile{background:#fff;border-radius:50%;width:min(280px,34vw);aspect-ratio:1;display:grid;place-items:center;box-shadow:0 0 0 8px rgba(242,183,5,.25)}
-.logo-tile img{width:92%}
+.logo-tile{background:#fff;border-radius:20px;width:min(260px,30vw);aspect-ratio:1;overflow:hidden;box-shadow:0 0 0 6px rgba(242,183,5,.35)}
+.logo-tile img{display:block;width:100%;height:100%;object-fit:contain}
 
 /* sticky strip */
 nav.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.12)}
